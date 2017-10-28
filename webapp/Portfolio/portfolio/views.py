@@ -1,7 +1,7 @@
 ## FROM THE CURRENT DIRECTORY, IMPORT APP
 from . import app
 from flask import render_template, request
-## CREATE AN INDEX ROUTE AND A FUNCTION(PAGE) FOR IT
+## CREATE AN INDEX ROUTE AND A FUNCTION(PAGE) FOR ITd
 
 comments = [{input() :input()}]
 

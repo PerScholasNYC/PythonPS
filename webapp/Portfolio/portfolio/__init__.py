@@ -3,4 +3,4 @@ from flask import Flask, render_template, request
 app = Flask('portfolio')
 ## FROM THE CURRENT DIRECTORY, IMPORT VIEWS
 from . import views
-## VIEWS IS WEHRE ALL YOUR CODE IS
+## VIEWS IS WEHRE ALL YOUR CODE ISr
