@@ -13,9 +13,17 @@
   Desktop Support Engineer
 </p>
 
+{% for i in messages%}
+ <table>
+   <tr>
+     <td> {{i.name}} says: {{i.message}} </td>
+    <tr>
+  <table>
+{% endfor %}
+
 
 <h3>What did you think about the Python Course?</h3>
-<form>
+<form method= 'POST' action="/ITCareer">
   Name:  <input type="text" name="User"
   placeholder+"Name"> </br>
   Thoughts:  <input type="text" name="Thoughts"
@@ -23,4 +31,4 @@
   <button>Submit</button>
 </form>
 
-<a href="/index">back to home</a>
+<a href="/">back to home</a>
