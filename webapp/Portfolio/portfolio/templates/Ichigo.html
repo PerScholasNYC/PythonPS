@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ichigo</title>
+  </head>
+  <link href="http://allfont.net/allfont.css?fonts=anime-ace" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  body{
+    margin: auto;
+    font-family: 'Anime Ace', arial;
+    color: yellow;
+  	font-size: 200%;
+  	text-align: center;
+    background-image: url("http://mangabeatingheart.altervista.org/wp-content/uploads/2015/01/Ep340_Soul_Society.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #a{
+    image-orientation: left;
+    height: 200px;
+    width: 200px;
+  }
+  #b{
+    image-orientation: center;
+    height: 200px;
+    width: 200px;
+  }
+  #c{
+    image-orientation: right;
+    height: 200px;
+    width: 200px;
+  }
+  #d{
+    height: 250px;
+    width: 500px;
+  }
+  #e{
+    height: 500px;
+    width: 1000px;
+  }
+  </style>
+  <body>
+    <h1>Ichigo Kurosaki</h1>
+    <img id="e" src="https://vignette.wikia.nocookie.net/naruto-bleach/images/8/89/IchigoKurosaki4.png/revision/latest?cb=20110903170555">
+    <p>Is a Human who has Shinigami powers and is a Substitute Shinigami. Ichigo is the son of Isshin and Masaki Kurosaki, and older brother of Karin and Yuzu. He is also married to Orihime Inoue and has a son named Kazui Kurosaki.</p>
+    <img id="d" src="http://static.comicvine.com/uploads/original/2/23287/3048384-ichigo_hollow_vs_ulquiorra_bat_gif__by_djfulltrevi-d4ruer8.gif">
+    {% for i in messages%}
+     <table>
+       <tr>
+         <td> {{i.name}} says: {{i.message}} </td>
+        <tr>
+      <table>
+    {% endfor %}
+
+
+    <h3>What did you think about Ichigo?</h3>
+    <form method= 'POST' action="/Ichigo">
+      Name:  <input type="text" name="User"
+      placeholder+"Name"> </br>
+      Thoughts:  <input type="text" name="Thoughts"
+        placeholder+"Name">
+      <button>Submit</button>
+    </form>
+    <br>
+    <br>
+  <div>
+    <a href="/Naruto"><img id="a" src="http://media.tumblr.com/tumblr_m0e90tGnsG1r8x6oz.png"></a>
+    <a href="/"><img id="b" src="http://vignette1.wikia.nocookie.net/entertainment1/images/1/12/Icons-dragonball.png/revision/latest?cb=20131203023526"></a>
+    <a href="/Luffy"><img id="c" src="https://pre00.deviantart.net/8751/th/pre/f/2013/155/4/b/one_piece__straw_hat_family_chapter_8_by_hotspot0626-d65r6wm.png"></a>
+  </div>
+
+  </body>
+</html>

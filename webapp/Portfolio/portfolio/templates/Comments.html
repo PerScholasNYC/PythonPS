@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <link href="http://allfont.net/allfont.css?fonts=anime-ace" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  #a{
+    image-orientation: left;
+    height: 1000px;
+    width: 500px;
+  }
+  #b{
+    image-orientation: center;
+    height: 1000px;
+    width: 500px;
+  }
+  #c{
+    image-orientation: right;
+    height: 1000px;
+    width: 500px;
+  }
+  body{
+    margin: auto;
+    font-family: 'Anime Ace', arial;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2015/10/moon-gd-desktop-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #a{
+    image-orientation: left;
+    height: 200px;
+    width: 200px;
+  }
+  #b{
+    image-orientation: center;
+    height: 200px;
+    width: 200px;
+  }
+  #c{
+    image-orientation: right;
+    height: 200px;
+    width: 200px;
+  }
+  #d{
+    image-orientation: center;
+    height: 500px;
+    width: 1000px;
+  }
+  </style>
+  <body>
+    <img id="d" src="https://pm1.narvii.com/5797/d4564c452c878e60e2470b24b7a0d1dbcccccaad_hq.jpg">
+    <p>The very moment he was born, he got up, sat himself down in a chair, and fell asleep. From that legendary beginning, never once has he ever laid down! He looks down on the ground itself!</p>
+  {% for i in messages%}
+   <table>
+     <tr>
+       <td> {{i.name}} says: {{i.message}} </td>
+      <tr>
+    <table>
+  {% endfor %}
+
+  <h3>What did you think about the site?</h3>
+  <form method= 'POST' action="/Naruto">
+    Name:  <input type="text" name="User"
+    placeholder+"Name"> </br>
+    Thoughts:  <input type="text" name="Thoughts"
+      placeholder+"Name">
+    <button>Submit</button>
+    </form>
+    <br>
+    <br>
+    <div>
+      <a href="/Luffy"><img id="a" src="https://pre00.deviantart.net/8751/th/pre/f/2013/155/4/b/one_piece__straw_hat_family_chapter_8_by_hotspot0626-d65r6wm.png"></a>
+      <a href="/"><img id="b" src="http://vignette1.wikia.nocookie.net/entertainment1/images/1/12/Icons-dragonball.png/revision/latest?cb=20131203023526"></a>
+      <a href="/Ichigo"><img id="c" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Ichigo_skull_symbol.svg"></a>
+      <a href="/Naruto"><img id="a" src="http://media.tumblr.com/tumblr_m0e90tGnsG1r8x6oz.png"></a>
+    </div>
+    <a href="https://github.com/PerScholasNYC/PythonPS">Link to my github account</a>
+  </body>
+</html>
